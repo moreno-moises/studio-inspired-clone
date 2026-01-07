@@ -20,7 +20,7 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              HASAN RAHEEM
+              MOSHE
             </h2>
             <p className="text-muted-foreground">
               Part heart, part chaos.
@@ -52,7 +52,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Hasan Raheem. All rights reserved.
+            © {new Date().getFullYear()} Moshe. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">
