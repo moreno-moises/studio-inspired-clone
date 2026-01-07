@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import dkpCover from "@/assets/dkp-cover.jpg";
+import inmotionCover from "@/assets/inmotion-cover.jpg";
 
 const streamingPlatforms = [
-  { name: "Spotify", icon: "spotify", url: "https://open.spotify.com/artist/5krkohEVJweRjKeAXGw6zt" },
-  { name: "YouTube", icon: "youtube", url: "https://www.youtube.com/@HasanRaheemOfficial" },
-  { name: "Apple Music", icon: "apple", url: "https://music.apple.com/us/artist/hasan-raheem/1495195812" },
+  { name: "Spotify", icon: "spotify", url: "https://open.spotify.com" },
+  { name: "YouTube", icon: "youtube", url: "https://www.youtube.com" },
+  { name: "Apple Music", icon: "apple", url: "https://music.apple.com" },
 ];
 
 const FeaturedAlbumSection = () => {
@@ -14,7 +14,7 @@ const FeaturedAlbumSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -31,13 +31,13 @@ const FeaturedAlbumSection = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6 }}
             className="relative group"
           >
             <div className="aspect-square overflow-hidden">
               <img
-                src={dkpCover}
+                src={inmotionCover}
                 alt="In Motion Album Cover"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -52,7 +52,7 @@ const FeaturedAlbumSection = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center lg:text-left"
           >

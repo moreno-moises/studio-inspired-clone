@@ -1,21 +1,21 @@
 import { motion } from "framer-motion";
-import tourImage from "@/assets/tour-image.jpg";
+import tourImage from "@/assets/new-tour-image.jpg";
 
 const events = [
   {
-    title: "DKP World Tour - Auckland",
+    title: "In Motion World Tour - Auckland",
     date: "January 14, 2026",
     time: "7:30 pm",
     link: "#",
   },
   {
-    title: "DKP World Tour - Sydney",
+    title: "In Motion World Tour - Sydney",
     date: "January 16, 2026",
     time: "7:30 pm",
     link: "#",
   },
   {
-    title: "DKP World Tour - Melbourne",
+    title: "In Motion World Tour - Melbourne",
     date: "January 17, 2026",
     time: "7:30 pm",
     link: "#",
@@ -29,14 +29,14 @@ const EventsSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
           <p className="text-sm tracking-widest uppercase text-muted-foreground mb-4">
             Upcoming Events
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-16">
-            DKP tour 25
+            In Motion tour 25
           </h2>
         </motion.div>
 
@@ -49,7 +49,7 @@ const EventsSection = () => {
                 href={event.link}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="block py-6 group"
               >
@@ -74,13 +74,13 @@ const EventsSection = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6 }}
             className="relative aspect-[4/5] overflow-hidden"
           >
             <img
               src={tourImage}
-              alt="DKP Tour"
+              alt="In Motion Tour"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
             />
           </motion.div>
