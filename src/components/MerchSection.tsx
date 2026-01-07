@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import merchImage from "@/assets/merch-image.jpg";
+import merchImage from "@/assets/new-merch-image.jpg";
 
 const MerchSection = () => {
   return (
@@ -10,13 +10,13 @@ const MerchSection = () => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6 }}
             className="relative aspect-square overflow-hidden order-2 lg:order-1"
           >
             <img
               src={merchImage}
-              alt="DKP Merch"
+              alt="In Motion Merch"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -25,7 +25,7 @@ const MerchSection = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6 }}
             className="order-1 lg:order-2"
           >
@@ -33,7 +33,7 @@ const MerchSection = () => {
               Merch
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              DKP isn't just music. It's wearable now.
+              In Motion isn't just music. It's wearable now.
             </p>
             <a
               href="#"

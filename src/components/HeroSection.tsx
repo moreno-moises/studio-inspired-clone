@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import dkpBg from "@/assets/dkp-bg.jpg";
+import mosheBg from "@/assets/moshe-bg.jpg";
 
 const HeroSection = () => {
   return (
@@ -7,8 +7,8 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={dkpBg}
-          alt="Hasan Raheem"
+          src={mosheBg}
+          alt="Moshe"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
@@ -19,7 +19,8 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-6 flex flex-col items-center justify-center min-h-screen">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-20"
         >
@@ -33,7 +34,8 @@ const HeroSection = () => {
 
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-12"
         >
@@ -49,7 +51,8 @@ const HeroSection = () => {
       {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
         transition={{ delay: 1.2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
