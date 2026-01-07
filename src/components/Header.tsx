@@ -18,7 +18,7 @@ const Header = () => {
       <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 md:py-6">
         <div className="flex items-center justify-between">
           <a href="#" className="font-display text-lg md:text-xl font-bold tracking-wider">
-            HASAN RAHEEM
+            MOSHE
           </a>
           
           <button
@@ -42,7 +42,7 @@ const Header = () => {
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6">
                 <span className="font-display text-lg md:text-xl font-bold tracking-wider">
-                  HASAN RAHEEM
+                  MOSHE
                 </span>
                 <button
                   onClick={() => setIsMenuOpen(false)}

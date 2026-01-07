@@ -17,7 +17,7 @@ const AboutSection = () => {
             About
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold">
-            Dil Kay Parday
+            In Motion
           </h2>
         </motion.div>
 
@@ -35,13 +35,15 @@ const AboutSection = () => {
           </p>
           
           <div className="font-display text-3xl md:text-4xl lg:text-5xl font-bold letter-spacing-extreme text-center py-12 border-y border-border">
-            <span className="text-neon-pink">D</span>
-            <span className="text-foreground">i</span>
-            <span className="text-neon-cyan">l</span>
+            <span className="text-neon-pink">I</span>
+            <span className="text-foreground">n</span>
             <span className="text-foreground mx-4">&nbsp;</span>
-            <span className="text-neon-yellow">K</span>
-            <span className="text-foreground">a</span>
-            <span className="text-neon-green">y</span>
+            <span className="text-neon-cyan">M</span>
+            <span className="text-foreground">o</span>
+            <span className="text-neon-yellow">t</span>
+            <span className="text-foreground">i</span>
+            <span className="text-neon-green">o</span>
+            <span className="text-foreground">n</span>
           </div>
         </motion.div>
 
@@ -54,7 +56,7 @@ const AboutSection = () => {
           className="space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground"
         >
           <p>
-            "Dil Kay Parday" is more than an album—it's a raw, emotional journey through the 
+            "In Motion" is more than an album—it's a raw, emotional journey through the 
             veils of the heart. Each track peels back another layer, revealing vulnerability, 
             passion, and the beautiful chaos of human emotion.
           </p>

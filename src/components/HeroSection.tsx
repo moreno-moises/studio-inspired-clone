@@ -24,7 +24,7 @@ const HeroSection = () => {
           className="mt-20"
         >
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-            DIL KAY PARDAY
+            IN MOTION
           </h1>
           <p className="text-lg md:text-xl font-light tracking-widest uppercase text-neon-pink animate-pulse-glow">
             OUT NOW!!

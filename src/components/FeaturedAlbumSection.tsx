@@ -38,7 +38,7 @@ const FeaturedAlbumSection = () => {
             <div className="aspect-square overflow-hidden">
               <img
                 src={dkpCover}
-                alt="Dil Kay Parday Album Cover"
+                alt="In Motion Album Cover"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -57,7 +57,7 @@ const FeaturedAlbumSection = () => {
             className="text-center lg:text-left"
           >
             <h3 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
-              Dil Kay Parday
+              In Motion
             </h3>
             
             <p className="text-sm tracking-widest uppercase text-muted-foreground mb-6">
