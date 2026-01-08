@@ -65,8 +65,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Eurostile', 'Inter', 'sans-serif'],
-        display: ['Eurostile', 'Space Grotesk', 'sans-serif'],
+        sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        display: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
         glassure: ['Glassure', 'Space Grotesk', 'sans-serif'],
       },
       borderRadius: {
