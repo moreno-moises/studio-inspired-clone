@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ksdGlow from "@/assets/ksd-glow.png";
 
 const platforms = [
   { name: "Spotify", url: "https://open.spotify.com/artist/moshe" },
@@ -11,8 +12,20 @@ const platforms = [
 
 const MusicSection = () => {
   return (
-    <section id="music" className="py-24 md:py-32 px-6 md:px-12 bg-card">
-      <div className="max-w-4xl mx-auto text-center">
+    <section 
+      id="music" 
+      className="relative min-h-screen flex items-center justify-center px-6 md:px-12"
+      style={{
+        backgroundImage: `url(${ksdGlow})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-background/80" />
+      
+      <div className="relative z-10 max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +57,7 @@ const MusicSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="group border border-border p-6 md:p-8 hover:border-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
+              className="group border border-border p-6 md:p-8 hover:border-neon-pink hover:bg-neon-pink/10 transition-all duration-300 bg-background/50 backdrop-blur-sm"
             >
               <span className="font-display text-lg md:text-xl font-bold group-hover:text-neon-pink transition-colors">
                 {platform.name}

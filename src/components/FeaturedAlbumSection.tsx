@@ -22,7 +22,7 @@ const FeaturedAlbumSection = () => {
             Featured
           </p>
           <h2 className="font-glassure text-4xl md:text-5xl lg:text-6xl font-bold">
-            EP
+            Debut EP
           </h2>
         </motion.div>
 

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import merchImage from "@/assets/new-merch-image.jpg";
 
 const MerchSection = () => {
@@ -29,12 +30,12 @@ const MerchSection = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
             In Motion isn't just music. It's wearable now.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/merch"
             className="inline-block px-8 py-4 bg-foreground text-background font-display text-sm tracking-widest uppercase hover:bg-neon-pink hover:text-foreground transition-all duration-300"
           >
             Shop Now!
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

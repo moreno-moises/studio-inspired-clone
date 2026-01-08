@@ -7,19 +7,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Eurostile';
-  src: url('https://fonts.cdnfonts.com/s/19663/EurostileBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Eurostile';
-  src: url('https://fonts.cdnfonts.com/s/19663/eurostile.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @tailwind base;
 @tailwind components;
@@ -106,11 +93,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Eurostile', 'Inter', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Eurostile', 'Space Grotesk', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
   
   .font-glassure {
@@ -161,7 +148,7 @@
   }
 
   .font-display {
-    font-family: 'Eurostile', 'Space Grotesk', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
   .hover-underline {

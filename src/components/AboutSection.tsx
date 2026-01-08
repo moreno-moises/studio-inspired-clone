@@ -5,7 +5,7 @@ const songs = [
   "Afterglow",
   "Somewhere Higher",
   "2AM",
-  "",
+  "(empty space)",
   "BLEED ON",
   "for what has come to be",
   "at the hour of my death call me",
@@ -54,9 +54,7 @@ const AboutSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false, amount: 0.3 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className={`font-display text-xl md:text-2xl lg:text-3xl font-light tracking-wider ${
-                    song === "" ? "h-8" : "hover:text-neon-pink transition-colors cursor-default"
-                  }`}
+                  className="font-display text-xl md:text-2xl lg:text-3xl font-light tracking-wider hover:text-neon-pink transition-colors cursor-default"
                 >
                   {song}
                 </motion.div>
