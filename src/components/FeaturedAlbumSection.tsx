@@ -9,7 +9,7 @@ const streamingPlatforms = [
 
 const FeaturedAlbumSection = () => {
   return (
-    <section id="music" className="py-24 md:py-32 px-6 md:px-12">
+    <section id="ep" className="py-24 md:py-32 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,8 +21,8 @@ const FeaturedAlbumSection = () => {
           <p className="text-sm tracking-widest uppercase text-muted-foreground mb-4">
             Featured
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold">
-            Album
+          <h2 className="font-glassure text-4xl md:text-5xl lg:text-6xl font-bold">
+            EP
           </h2>
         </motion.div>
 
@@ -38,7 +38,7 @@ const FeaturedAlbumSection = () => {
             <div className="aspect-square overflow-hidden">
               <img
                 src={inmotionCover}
-                alt="In Motion Album Cover"
+                alt="In Motion EP Cover"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>

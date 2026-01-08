@@ -1,25 +1,35 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const menuItems = [
-    { label: "Home", href: "#" },
-    { label: "Music", href: "#music" },
-    { label: "Tour", href: "#tour" },
-    { label: "Merch", href: "#merch" },
-    { label: "About", href: "#about" },
+    { label: "Home", href: "/" },
+    { label: "In Motion", href: "/in-motion" },
+    { label: "Music", href: "/music" },
+    { label: "Tour", href: "/tour" },
+    { label: "Merch", href: "/merch" },
+    { label: "In Motion VST", href: "/vst" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
+
+  const handleNavClick = (href: string) => {
+    setIsMenuOpen(false);
+    navigate(href);
+  };
 
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 md:py-6">
         <div className="flex items-center justify-between">
-          <a href="#" className="font-display text-lg md:text-xl font-bold tracking-wider">
+          <Link to="/" className="font-display text-lg md:text-xl font-bold tracking-wider">
             MOSHE
-          </a>
+          </Link>
           
           <button
             onClick={() => setIsMenuOpen(true)}
@@ -54,7 +64,7 @@ const Header = () => {
               </div>
 
               <nav className="flex-1 flex items-center justify-center">
-                <ul className="space-y-8 text-center">
+                <ul className="space-y-6 text-center">
                   {menuItems.map((item, index) => (
                     <motion.li
                       key={item.label}
@@ -62,13 +72,16 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
                     >
-                      <a
-                        href={item.href}
-                        onClick={() => setIsMenuOpen(false)}
-                        className="font-display text-4xl md:text-6xl font-bold hover:text-neon-pink transition-colors"
+                      <button
+                        onClick={() => handleNavClick(item.href)}
+                        className={`text-3xl md:text-5xl font-bold hover:text-neon-pink transition-colors ${
+                          item.label === "In Motion" || item.label === "In Motion VST" || item.label === "Merch"
+                            ? "font-glassure"
+                            : "font-display"
+                        }`}
                       >
                         {item.label}
-                      </a>
+                      </button>
                     </motion.li>
                   ))}
                 </ul>

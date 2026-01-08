@@ -3,21 +3,9 @@ import tourImage from "@/assets/new-tour-image.jpg";
 
 const events = [
   {
-    title: "In Motion World Tour - Auckland",
-    date: "January 14, 2026",
-    time: "7:30 pm",
-    link: "#",
-  },
-  {
-    title: "In Motion World Tour - Sydney",
-    date: "January 16, 2026",
-    time: "7:30 pm",
-    link: "#",
-  },
-  {
-    title: "In Motion World Tour - Melbourne",
-    date: "January 17, 2026",
-    time: "7:30 pm",
+    title: "TBA",
+    date: "TBA",
+    time: "TBA",
     link: "#",
   },
 ];
@@ -36,7 +24,7 @@ const EventsSection = () => {
             Upcoming Events
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-16">
-            In Motion tour 25
+            In Motion Tour '26
           </h2>
         </motion.div>
 

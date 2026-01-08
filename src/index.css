@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+@font-face {
+  font-family: 'Glassure';
+  src: url('https://fonts.cdnfonts.com/s/88661/Glassure.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eurostile';
+  src: url('https://fonts.cdnfonts.com/s/19663/EurostileBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eurostile';
+  src: url('https://fonts.cdnfonts.com/s/19663/eurostile.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -85,11 +106,15 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Eurostile', 'Inter', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Eurostile', 'Space Grotesk', sans-serif;
+  }
+  
+  .font-glassure {
+    font-family: 'Glassure', 'Space Grotesk', sans-serif;
   }
 }
 
@@ -136,7 +161,7 @@
   }
 
   .font-display {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Eurostile', 'Space Grotesk', sans-serif;
   }
 
   .hover-underline {
