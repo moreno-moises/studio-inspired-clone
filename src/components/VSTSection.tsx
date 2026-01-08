@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const VSTSection = () => {
   return (
@@ -14,8 +15,8 @@ const VSTSection = () => {
           <p className="text-sm tracking-widest uppercase text-muted-foreground mb-4">
             Exclusive Release
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Custom VST
+          <h2 className="font-glassure text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            In Motion VST
           </h2>
         </motion.div>
 
@@ -83,12 +84,12 @@ const VSTSection = () => {
             <Download className="w-5 h-5" />
             Download Free
           </a>
-          <a
-            href="#"
+          <Link
+            to="/vst-learn-more"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-foreground font-display text-sm tracking-widest uppercase hover:bg-foreground hover:text-background transition-all duration-300"
           >
             Learn More
-          </a>
+          </Link>
         </motion.div>
 
         <motion.p

@@ -23,7 +23,7 @@ const Footer = () => {
               MOSHE
             </h2>
             <p className="text-muted-foreground">
-              Part heart, part chaos.
+              Stay in motion.
             </p>
           </motion.div>
 

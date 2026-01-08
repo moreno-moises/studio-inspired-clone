@@ -65,8 +65,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
+        sans: ['Eurostile', 'Inter', 'sans-serif'],
+        display: ['Eurostile', 'Space Grotesk', 'sans-serif'],
+        glassure: ['Glassure', 'Space Grotesk', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
