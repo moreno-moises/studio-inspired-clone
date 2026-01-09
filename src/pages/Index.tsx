@@ -8,10 +8,12 @@ import MusicSection from "@/components/MusicSection";
 import ContactSection from "@/components/ContactSection";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
+import FloatingCrosses from "@/components/FloatingCrosses";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <FloatingCrosses />
       <Header />
       <main>
         <HeroSection />

@@ -32,10 +32,10 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 330 100% 60%;
+    --accent: 0 100% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --neon-pink: 330 100% 60%;
+    --neon-pink: 0 100% 50%;
     --neon-cyan: 180 100% 50%;
     --neon-yellow: 50 100% 50%;
     --neon-green: 120 100% 40%;
@@ -72,7 +72,7 @@
     --secondary-foreground: 0 0% 100%;
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
-    --accent: 330 100% 60%;
+    --accent: 0 100% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;

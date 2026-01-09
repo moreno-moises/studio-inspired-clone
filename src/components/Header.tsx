@@ -32,7 +32,7 @@ const Header = () => {
             <img 
               src={mosheLogo} 
               alt="MOSHE" 
-              className="h-8 md:h-10 w-auto"
+              className="h-20 md:h-28 w-auto"
             />
           </Link>
           
@@ -59,7 +59,7 @@ const Header = () => {
                 <img 
                   src={mosheLogo} 
                   alt="MOSHE" 
-                  className="h-8 md:h-10 w-auto"
+                  className="h-20 md:h-28 w-auto"
                 />
                 <button
                   onClick={() => setIsMenuOpen(false)}
