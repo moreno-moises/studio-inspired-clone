@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState, useEffect, useCallback } from "react";
 
 const songs = [
   "Far Away",
@@ -12,9 +13,57 @@ const songs = [
   "UNTIL I DIE",
 ];
 
+const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+
+const ScrambleText = ({ text }: { text: string }) => {
+  const [displayText, setDisplayText] = useState(text);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const scramble = useCallback(() => {
+    let iterations = 0;
+    const interval = setInterval(() => {
+      setDisplayText(
+        text
+          .split("")
+          .map((char, index) => {
+            if (char === " ") return " ";
+            if (index < iterations) return text[index];
+            return characters[Math.floor(Math.random() * characters.length)];
+          })
+          .join("")
+      );
+      iterations += 1 / 2;
+      if (iterations >= text.length) {
+        clearInterval(interval);
+        setDisplayText(text);
+      }
+    }, 30);
+    return () => clearInterval(interval);
+  }, [text]);
+
+  useEffect(() => {
+    if (isHovering) {
+      const cleanup = scramble();
+      return cleanup;
+    } else {
+      setDisplayText(text);
+    }
+  }, [isHovering, scramble, text]);
+
+  return (
+    <span
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+      className="cursor-pointer hover:text-neon-pink transition-colors"
+    >
+      {displayText}
+    </span>
+  );
+};
+
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-32 px-6 md:px-12 bg-card">
+    <section id="about" className="py-24 md:py-32 px-4 md:px-12 bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
@@ -44,7 +93,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="relative pl-0 md:pl-0 lg:pl-0"
           >
             <div className="grid grid-cols-1 gap-3">
               {songs.map((song, index) => (
@@ -54,9 +103,9 @@ const AboutSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false, amount: 0.3 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="font-display text-xl md:text-2xl lg:text-3xl font-light tracking-wider hover:text-neon-pink transition-colors cursor-default"
+                  className="font-display text-xl md:text-2xl lg:text-3xl font-light tracking-wider whitespace-nowrap"
                 >
-                  {song}
+                  <ScrambleText text={song} />
                 </motion.div>
               ))}
             </div>

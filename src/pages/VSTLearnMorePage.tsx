@@ -43,9 +43,7 @@ const VSTLearnMorePage = () => {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
-                The In Motion VST is a custom-built audio plugin designed to create evolving stereo motion, 
-                rhythmic space, and psychedelic depth inspired by the "In Motion" EP. Built for producers 
-                seeking expressive movement and motion.
+                The In Motion VST is a custom-built audio plugin designed to create evolving stereo motion, rhythmic space, and psychedelic depth inspired by the "In Motion" EP. Built for producers seeking expressive movement and motion.
               </p>
             </motion.div>
 
