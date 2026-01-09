@@ -79,7 +79,7 @@ const FeaturedAlbumSection = () => {
             </div>
 
             <a
-              href="#"
+              href="#about"
               className="inline-block text-sm tracking-widest uppercase hover-underline"
             >
               Learn more

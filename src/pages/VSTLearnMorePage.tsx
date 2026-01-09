@@ -3,16 +3,16 @@ import { Download, ArrowLeft, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import vstImage from "@/assets/in-motion-vst.png";
 
 const features = [
-  "Custom-designed presets used in the In Motion EP",
-  "Unique analog-modeled saturation algorithm",
-  "Spatial reverb designed for atmospheric textures",
-  "Intuitive interface with real-time visualization",
-  "Low CPU usage for smooth performance",
-  "Compatible with all major DAWs (Ableton, FL Studio, Logic, Pro Tools, etc.)",
-  "Available for both macOS and Windows",
-  "Free updates for life",
+  "Custom multi-tap reverse delay with tempo-synced motion",
+  "KSD spatial warp mode for phasey, psychedelic width",
+  "Minimal, performance-focused interface with animated feedback",
+  "Optimized DSP for low CPU usage",
+  "Compatible with major Ableton and FL Studio",
+  "Available for Windows",
+  "Free updates",
 ];
 
 const VSTLearnMorePage = () => {
@@ -43,9 +43,9 @@ const VSTLearnMorePage = () => {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
-                The In Motion VST is a custom-built audio plugin that captures the exact sonic 
-                character of the "In Motion" EP. Designed for producers who want to create 
-                that signature atmospheric, emotional sound.
+                The In Motion VST is a custom-built audio plugin designed to create evolving stereo motion, 
+                rhythmic space, and psychedelic depth inspired by the "In Motion" EP. Built for producers 
+                seeking expressive movement and motion.
               </p>
             </motion.div>
 
@@ -56,31 +56,11 @@ const VSTLearnMorePage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative mb-16"
             >
-              <div className="bg-card border border-border p-8 md:p-12 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-pink/10 via-transparent to-neon-cyan/10" />
-                <div className="relative z-10">
-                  <div className="font-display text-3xl md:text-4xl font-bold mb-2">
-                    <span className="text-neon-pink">MOSHE</span>
-                    <span className="text-foreground"> // </span>
-                    <span className="text-neon-cyan">MOTION</span>
-                  </div>
-                  <p className="text-muted-foreground text-sm tracking-widest uppercase mb-8">
-                    VST Plugin v1.0
-                  </p>
-                  
-                  {/* Fake Knobs UI */}
-                  <div className="flex justify-center gap-8 md:gap-12 mb-8">
-                    {["DRIVE", "SPACE", "GRIT", "DEPTH", "MIX"].map((label) => (
-                      <div key={label} className="flex flex-col items-center">
-                        <div className="w-14 h-14 md:w-20 md:h-20 rounded-full border-2 border-foreground/30 bg-background flex items-center justify-center mb-2">
-                          <div className="w-1 h-5 bg-neon-pink rounded-full transform -rotate-45" />
-                        </div>
-                        <span className="text-xs tracking-widest text-muted-foreground">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              <img
+                src={vstImage}
+                alt="In Motion VST Plugin"
+                className="w-full max-w-2xl mx-auto"
+              />
             </motion.div>
 
             {/* Features */}
