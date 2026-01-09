@@ -44,7 +44,7 @@ const VSTSection = () => {
             <img
               src={vstImage}
               alt="In Motion VST Plugin"
-              className="w-full max-w-xl mx-auto"
+              className="w-full max-w-sm mx-auto"
             />
           </div>
         </motion.div>

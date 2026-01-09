@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ksdLogo from "@/assets/ksd-red.png";
 
 const socialLinks = [
   { name: "Instagram", url: "https://instagram.com/hasanraheem" },
@@ -19,9 +20,14 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-2">
               MOSHE
             </h2>
+            <img 
+              src={ksdLogo} 
+              alt="KSD" 
+              className="h-6 md:h-8 w-auto mb-4"
+            />
             <p className="text-muted-foreground">
               Stay in motion.
             </p>
