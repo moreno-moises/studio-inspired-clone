@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
+import mosheLogo from "@/assets/moshe-logo.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,8 +28,12 @@ const Header = () => {
     <>
       <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 md:py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="font-display text-lg md:text-xl font-bold tracking-wider">
-            MOSHE
+          <Link to="/" className="block">
+            <img 
+              src={mosheLogo} 
+              alt="MOSHE" 
+              className="h-8 md:h-10 w-auto"
+            />
           </Link>
           
           <button
@@ -51,9 +56,11 @@ const Header = () => {
           >
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6">
-                <span className="font-display text-lg md:text-xl font-bold tracking-wider">
-                  MOSHE
-                </span>
+                <img 
+                  src={mosheLogo} 
+                  alt="MOSHE" 
+                  className="h-8 md:h-10 w-auto"
+                />
                 <button
                   onClick={() => setIsMenuOpen(false)}
                   className="p-2 hover:opacity-70 transition-opacity"

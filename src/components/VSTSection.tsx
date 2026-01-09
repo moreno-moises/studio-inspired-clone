@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { Link } from "react-router-dom";
+import vstImage from "@/assets/in-motion-vst.png";
 
 const VSTSection = () => {
   return (
@@ -38,35 +39,13 @@ const VSTSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative inline-block mb-12"
         >
-          {/* VST Preview Box */}
-          <div className="bg-card border border-border p-8 md:p-12 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-neon-pink/10 via-transparent to-neon-cyan/10" />
-            <div className="relative z-10">
-              <div className="font-display text-2xl md:text-3xl font-bold mb-2">
-                <span className="text-neon-pink">MOSHE</span>
-                <span className="text-foreground"> // </span>
-                <span className="text-neon-cyan">MOTION</span>
-              </div>
-              <p className="text-muted-foreground text-sm tracking-widest uppercase mb-6">
-                VST Plugin v1.0
-              </p>
-              
-              {/* Fake Knobs UI */}
-              <div className="flex justify-center gap-8 mb-6">
-                {["DRIVE", "SPACE", "GRIT"].map((label) => (
-                  <div key={label} className="flex flex-col items-center">
-                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-foreground/30 bg-background flex items-center justify-center mb-2">
-                      <div className="w-1 h-4 bg-neon-pink rounded-full transform -rotate-45" />
-                    </div>
-                    <span className="text-xs tracking-widest text-muted-foreground">{label}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <p className="text-sm text-muted-foreground">
-                Compatible with DAWs • macOS & Windows
-              </p>
-            </div>
+          {/* VST Preview Image */}
+          <div className="relative overflow-hidden">
+            <img
+              src={vstImage}
+              alt="In Motion VST Plugin"
+              className="w-full max-w-xl mx-auto"
+            />
           </div>
         </motion.div>
 

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import tourImage from "@/assets/new-tour-image.jpg";
 
 const events = [
@@ -15,7 +14,7 @@ const EventsSection = () => {
   return (
     <section 
       id="tour" 
-      className="relative min-h-screen flex items-center justify-center px-6 md:px-12 group/section"
+      className="relative min-h-[120vh] flex items-center justify-center px-6 md:px-12 group/section"
       style={{
         backgroundImage: `url(${tourImage})`,
         backgroundSize: 'cover',
@@ -77,12 +76,12 @@ const EventsSection = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <Link
-            to="/merch"
+          <a
+            href="#"
             className="inline-block px-8 py-4 bg-foreground text-background font-display text-sm tracking-widest uppercase hover:bg-neon-pink hover:text-foreground transition-all duration-300"
           >
-            Shop Now!
-          </Link>
+            Get Tickets
+          </a>
         </motion.div>
       </div>
     </section>
