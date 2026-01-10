@@ -27,8 +27,8 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-4 left-6 md:left-12 z-50">
-        <div className="relative flex items-center gap-3 px-3 py-2 rounded-xl backdrop-blur-xl bg-background/50 border border-white/10">
-          <Link to="/" className="block -my-4 -ml-1">
+        <div className="relative flex items-center gap-3 pl-0 pr-3 py-2 rounded-xl backdrop-blur-xl bg-white/10 border border-white/20">
+          <Link to="/" className="block -my-4">
             <img 
               src={mosheLogo} 
               alt="MOSHE" 
