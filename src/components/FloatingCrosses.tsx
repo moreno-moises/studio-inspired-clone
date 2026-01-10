@@ -17,10 +17,10 @@ const FloatingCrosses = () => {
 
   useEffect(() => {
     // Generate random crosses
-    const generatedCrosses: Cross[] = Array.from({ length: 18 }, (_, i) => ({
+    const generatedCrosses: Cross[] = Array.from({ length: 30 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
-      y: Math.random() * 400 + i * 30,
+      y: Math.random() * 400 + i * 20,
       size: Math.random() * 20 + 16,
       rotation: Math.random() * 360,
       speed: Math.random() * 0.8 + 0.3,
@@ -30,14 +30,12 @@ const FloatingCrosses = () => {
     // Find merch and contact sections
     const findSections = () => {
       const merchSection = document.getElementById('merch');
-      const contactSection = document.getElementById('contact');
       
-      if (merchSection && contactSection) {
+      if (merchSection) {
         const merchRect = merchSection.getBoundingClientRect();
-        const contactRect = contactSection.getBoundingClientRect();
         setSectionBounds({
-          start: window.scrollY + merchRect.top - 200,
-          end: window.scrollY + contactRect.top - 100,
+          start: window.scrollY + merchRect.top,
+          end: window.scrollY + merchRect.bottom,
         });
       }
     };
@@ -51,7 +49,7 @@ const FloatingCrosses = () => {
   // Container opacity based on scroll position
   const containerOpacity = useTransform(
     scrollY,
-    [sectionBounds.start - 200, sectionBounds.start, sectionBounds.end - 200, sectionBounds.end],
+    [sectionBounds.start - 100, sectionBounds.start + 100, sectionBounds.end - 200, sectionBounds.end],
     [0, 1, 1, 0]
   );
 
