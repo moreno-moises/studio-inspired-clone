@@ -26,15 +26,13 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 px-6 py-1 md:px-12 md:py-2">
-        <div className="absolute inset-0 backdrop-blur-md bg-background/40 mask-gradient-down" />
-        <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-b from-background/40 to-transparent" />
-        <div className="flex items-center justify-between relative z-10">
+      <header className="fixed top-4 left-4 z-50">
+        <div className="relative flex items-center gap-4 px-4 py-2 rounded-xl backdrop-blur-xl bg-background/50 border border-white/10">
           <Link to="/" className="block">
             <img 
               src={mosheLogo} 
               alt="MOSHE" 
-              className="h-20 md:h-28 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
           </Link>
           
