@@ -16,13 +16,13 @@ const FloatingCrosses = () => {
 
   useEffect(() => {
     // Generate random crosses
-    const generatedCrosses: Cross[] = Array.from({ length: 12 }, (_, i) => ({
+    const generatedCrosses: Cross[] = Array.from({ length: 18 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
-      y: Math.random() * 300 + i * 25, // Spread across the page
-      size: Math.random() * 12 + 8,
-      rotation: Math.random() * 45,
-      speed: Math.random() * 0.5 + 0.2,
+      y: Math.random() * 400 + i * 30, // Spread across the page
+      size: Math.random() * 20 + 16, // Bigger size: 16-36px
+      rotation: Math.random() * 360,
+      speed: Math.random() * 0.8 + 0.3,
     }));
     setCrosses(generatedCrosses);
   }, []);
@@ -37,9 +37,10 @@ const FloatingCrosses = () => {
 };
 
 const CrossElement = ({ cross, scrollY }: { cross: Cross; scrollY: any }) => {
-  const y = useTransform(scrollY, [0, 5000], [cross.y, cross.y - 800 * cross.speed]);
-  const rotate = useTransform(scrollY, [0, 5000], [cross.rotation, cross.rotation + 180 * cross.speed]);
-  const opacity = useTransform(scrollY, [0, 1000, 4000, 5000], [0.15, 0.25, 0.25, 0.1]);
+  const y = useTransform(scrollY, [0, 5000], [cross.y, cross.y - 1200 * cross.speed]);
+  const rotate = useTransform(scrollY, [0, 5000], [cross.rotation, cross.rotation + 360 * cross.speed]);
+  const scale = useTransform(scrollY, [0, 2500, 5000], [1, 1.2, 0.8]);
+  const opacity = useTransform(scrollY, [0, 500, 3000, 5000], [0.2, 0.35, 0.35, 0.15]);
 
   return (
     <motion.div
@@ -48,7 +49,18 @@ const CrossElement = ({ cross, scrollY }: { cross: Cross; scrollY: any }) => {
         left: `${cross.x}%`,
         y,
         rotate,
+        scale,
         opacity,
+      }}
+      animate={{
+        x: [0, Math.sin(cross.id) * 20, 0],
+      }}
+      transition={{
+        x: {
+          duration: 4 + cross.speed * 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        },
       }}
     >
       <svg
