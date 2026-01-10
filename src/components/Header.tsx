@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 md:py-6">
+      <header className="fixed top-0 left-0 right-0 z-50 px-6 py-2 md:px-12 md:py-3 backdrop-blur-md bg-background/30">
         <div className="flex items-center justify-between">
           <Link to="/" className="block">
             <img 

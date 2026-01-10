@@ -22,11 +22,12 @@ const HeroSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-left"
         >
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-4 tracking-tight">
+          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-2 tracking-tight">
             MOSHE
           </h1>
-          <p className="text-lg md:text-xl font-light tracking-widest uppercase text-neon-pink animate-pulse-glow">
+          <p className="text-lg md:text-xl font-light tracking-widest uppercase text-accent animate-pulse-glow">
             IN MOTION OUT NOW!
           </p>
         </motion.div>
