@@ -26,13 +26,13 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-4 left-4 z-50">
-        <div className="relative flex items-center gap-4 px-4 py-2 rounded-xl backdrop-blur-xl bg-background/50 border border-white/10">
-          <Link to="/" className="block">
+      <header className="fixed top-4 left-6 md:left-12 z-50">
+        <div className="relative flex items-center gap-3 px-3 py-2 rounded-xl backdrop-blur-xl bg-background/50 border border-white/10">
+          <Link to="/" className="block -my-4 -ml-1">
             <img 
               src={mosheLogo} 
               alt="MOSHE" 
-              className="h-16 md:h-20 w-auto"
+              className="h-20 md:h-24 w-auto"
             />
           </Link>
           
