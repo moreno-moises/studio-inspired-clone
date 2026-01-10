@@ -20,13 +20,13 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-2">
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-1">
               MOSHE
             </h2>
             <img 
               src={ksdLogo} 
               alt="KSD" 
-              className="h-6 md:h-8 w-auto mb-4"
+              className="h-8 md:h-10 w-auto mb-1"
             />
             <p className="text-muted-foreground">
               Stay in motion.
