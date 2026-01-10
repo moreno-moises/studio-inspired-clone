@@ -16,13 +16,13 @@ const HeroSection = () => {
       </div>
 
       {/* Content - Bottom Left */}
-      <div className="relative z-10 px-6 md:px-12 pb-16 md:pb-24">
+      <div className="relative z-10 px-6 md:px-12 pb-16 md:pb-24 w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-left"
+          className="flex flex-col items-start"
         >
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-2 tracking-tight">
             MOSHE
