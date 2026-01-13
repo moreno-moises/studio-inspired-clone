@@ -191,9 +191,15 @@
     -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
   }
   
-  .marquee-track {
-    display: inline-block;
-    animation: marquee 8s linear infinite;
+  .marquee {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+  }
+
+  .marquee > * {
+    flex: 0 0 auto;
   }
 }
 

@@ -22,12 +22,12 @@ const HeroSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col items-start"
+          className="flex flex-col items-start transform-gpu -translate-x-3 md:-translate-x-4 lg:-translate-x-5"
         >
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none ml-0">
+          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none">
             MOSHE
           </h1>
-          <p className="text-lg md:text-xl font-light tracking-widest uppercase text-accent animate-pulse-glow mt-2 ml-0">
+          <p className="text-lg md:text-xl font-light tracking-widest uppercase text-accent animate-pulse-glow mt-2">
             IN MOTION OUT NOW!
           </p>
         </motion.div>
