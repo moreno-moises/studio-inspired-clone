@@ -27,34 +27,32 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-4 right-4 md:right-8 z-50">
-        <div className="relative flex flex-col rounded-sm backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden w-[200px] md:w-[240px] h-[200px] md:h-[240px]">
-          <div className="flex-1 flex items-center justify-center">
-            <div className="flex items-center gap-2">
-              <Link to="/" className="block">
-                <img 
-                  src={mosheLogo} 
-                  alt="MOSHE" 
-                  className="h-16 md:h-20 w-auto"
-                />
-              </Link>
-              
-              <button
-                onClick={() => setIsMenuOpen(true)}
-                className="p-2 hover:opacity-70 transition-opacity"
-                aria-label="Open menu"
-              >
-                <Menu className="w-6 h-6" />
-              </button>
-            </div>
+        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden">
+          {/* Top row: hamburger + MOSHE text */}
+          <div className="flex items-center gap-4 px-4 py-3">
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="p-1 hover:opacity-70 transition-opacity"
+              aria-label="Open menu"
+            >
+              <Menu className="w-6 h-6" strokeWidth={1.5} />
+            </button>
+            
+            <Link to="/" className="block">
+              <span className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase">
+                <span className="text-foreground/60">MOS</span>
+                <span className="text-foreground">HE</span>
+              </span>
+            </Link>
           </div>
           
           {/* Marquee text */}
-          <div className="w-full overflow-hidden bg-accent/20 py-1">
+          <div className="w-full overflow-hidden bg-accent/20 py-1.5">
             <div className="marquee">
-              <span className="text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4">
+              <span className="text-[10px] md:text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4">
                 IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦
               </span>
-              <span aria-hidden="true" className="text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4">
+              <span aria-hidden="true" className="text-[10px] md:text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4">
                 IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦
               </span>
             </div>
