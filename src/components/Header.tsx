@@ -26,23 +26,37 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-4 left-6 md:left-12 z-50">
-        <div className="relative flex items-center gap-3 pl-0 pr-3 py-2 rounded-xl backdrop-blur-xl bg-white/10 border border-white/20">
-          <Link to="/" className="block -my-4">
-            <img 
-              src={mosheLogo} 
-              alt="MOSHE" 
-              className="h-20 md:h-24 w-auto"
-            />
-          </Link>
+      <header className="fixed top-4 right-4 md:right-8 z-50">
+        <div className="relative flex flex-col rounded-md backdrop-blur-xl bg-white/10 border border-white/20 overflow-hidden">
+          <div className="flex items-center gap-2 pl-0 pr-3 py-2">
+            <Link to="/" className="block -my-3">
+              <img 
+                src={mosheLogo} 
+                alt="MOSHE" 
+                className="h-16 md:h-20 w-auto"
+              />
+            </Link>
+            
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="p-2 hover:opacity-70 transition-opacity"
+              aria-label="Open menu"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
           
-          <button
-            onClick={() => setIsMenuOpen(true)}
-            className="p-2 hover:opacity-70 transition-opacity"
-            aria-label="Open menu"
-          >
-            <Menu className="w-6 h-6" />
-          </button>
+          {/* Marquee text */}
+          <div className="w-full overflow-hidden bg-accent/20 py-1">
+            <div className="animate-marquee whitespace-nowrap">
+              <span className="text-xs font-bold tracking-widest text-accent mx-4">IN MOTION OUT NOW</span>
+              <span className="text-xs font-bold tracking-widest text-accent mx-4">✦</span>
+              <span className="text-xs font-bold tracking-widest text-accent mx-4">IN MOTION OUT NOW</span>
+              <span className="text-xs font-bold tracking-widest text-accent mx-4">✦</span>
+              <span className="text-xs font-bold tracking-widest text-accent mx-4">IN MOTION OUT NOW</span>
+              <span className="text-xs font-bold tracking-widest text-accent mx-4">✦</span>
+            </div>
+          </div>
         </div>
       </header>
 
