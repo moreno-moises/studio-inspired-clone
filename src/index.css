@@ -191,9 +191,9 @@
     -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
   }
   
-  .animate-marquee {
+  .marquee-track {
     display: inline-block;
-    animation: marquee 10s linear infinite;
+    animation: marquee 8s linear infinite;
   }
 }
 

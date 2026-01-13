@@ -27,34 +27,31 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-4 right-4 md:right-8 z-50">
-        <div className="relative flex flex-col rounded-md backdrop-blur-xl bg-white/10 border border-white/20 overflow-hidden">
-          <div className="flex items-center gap-2 pl-0 pr-3 py-2">
-            <Link to="/" className="block -my-3">
+        <div className="relative flex flex-col rounded-sm backdrop-blur-xl bg-white/10 border border-white/20 overflow-hidden w-[100px] md:w-[120px]">
+          <div className="flex items-center justify-center gap-1 py-2">
+            <Link to="/" className="block">
               <img 
                 src={mosheLogo} 
                 alt="MOSHE" 
-                className="h-16 md:h-20 w-auto"
+                className="h-12 md:h-14 w-auto"
               />
             </Link>
             
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="p-2 hover:opacity-70 transition-opacity"
+              className="p-1 hover:opacity-70 transition-opacity"
               aria-label="Open menu"
             >
-              <Menu className="w-6 h-6" />
+              <Menu className="w-5 h-5" />
             </button>
           </div>
           
           {/* Marquee text */}
-          <div className="w-full overflow-hidden bg-accent/20 py-1">
-            <div className="animate-marquee whitespace-nowrap">
-              <span className="text-xs font-bold tracking-widest text-accent mx-4">IN MOTION OUT NOW</span>
-              <span className="text-xs font-bold tracking-widest text-accent mx-4">✦</span>
-              <span className="text-xs font-bold tracking-widest text-accent mx-4">IN MOTION OUT NOW</span>
-              <span className="text-xs font-bold tracking-widest text-accent mx-4">✦</span>
-              <span className="text-xs font-bold tracking-widest text-accent mx-4">IN MOTION OUT NOW</span>
-              <span className="text-xs font-bold tracking-widest text-accent mx-4">✦</span>
+          <div className="w-full overflow-hidden bg-accent/20 py-0.5">
+            <div className="marquee-track">
+              <span className="text-[8px] font-bold tracking-wider text-accent whitespace-nowrap">
+                IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ 
+              </span>
             </div>
           </div>
         </div>
