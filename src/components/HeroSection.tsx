@@ -22,7 +22,8 @@ const HeroSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col items-start transform-gpu -translate-x-3 md:-translate-x-4 lg:-translate-x-5"
+          className="flex flex-col items-start"
+          style={{ marginLeft: '-0.12em' }}
         >
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none">
             MOSHE
