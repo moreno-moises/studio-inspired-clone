@@ -27,9 +27,9 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-4 right-4 md:right-8 z-50">
-        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden">
-          {/* Top row: hamburger + MOSHE text */}
-          <div className="flex items-center gap-4 px-4 py-3">
+        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[160px] md:w-[200px] md:h-[200px]">
+          {/* Top area */}
+          <div className="flex items-start justify-between px-4 pt-4">
             <button
               onClick={() => setIsMenuOpen(true)}
               className="p-1 hover:opacity-70 transition-opacity"
@@ -37,22 +37,27 @@ const Header = () => {
             >
               <Menu className="w-6 h-6" strokeWidth={1.5} />
             </button>
-            
-            <Link to="/" className="block">
-              <span className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase">
-                <span className="text-foreground/60">MOS</span>
-                <span className="text-foreground">HE</span>
+
+            <Link to="/" className="block text-right">
+              <span className="text-lg md:text-xl font-light tracking-[0.35em] uppercase leading-[0.9]">
+                <span className="block text-foreground/60">MOS</span>
+                <span className="block text-foreground -mt-1">HE</span>
               </span>
             </Link>
           </div>
-          
+
+          <div className="flex-1" aria-hidden="true" />
+
           {/* Marquee text */}
-          <div className="w-full overflow-hidden bg-accent/20 py-1.5">
+          <div className="w-full overflow-hidden bg-accent/20 py-1.5 mt-auto">
             <div className="marquee">
               <span className="text-[10px] md:text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4">
                 IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦
               </span>
-              <span aria-hidden="true" className="text-[10px] md:text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4">
+              <span
+                aria-hidden="true"
+                className="text-[10px] md:text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4"
+              >
                 IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦
               </span>
             </div>
