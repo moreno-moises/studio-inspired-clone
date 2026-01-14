@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-4 right-4 md:right-8 z-50">
-        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[140px] md:w-[200px] md:h-[168px]">
+        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[130px] md:w-[200px] md:h-[156px]">
           {/* Top area */}
           <div className="flex items-center justify-between px-4 pt-3">
             <button
