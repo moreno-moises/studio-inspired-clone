@@ -27,9 +27,9 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-4 right-4 md:right-8 z-50">
-        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[160px] md:w-[200px] md:h-[200px]">
+        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[140px] md:w-[200px] md:h-[168px]">
           {/* Top area */}
-          <div className="flex items-start justify-between px-4 pt-4">
+          <div className="flex items-center justify-between px-4 pt-3">
             <button
               onClick={() => setIsMenuOpen(true)}
               className="p-1 hover:opacity-70 transition-opacity"
@@ -38,15 +38,14 @@ const Header = () => {
               <Menu className="w-6 h-6" strokeWidth={1.5} />
             </button>
 
-            <Link to="/" className="block text-right">
-              <span className="text-lg md:text-xl font-light tracking-[0.35em] uppercase leading-[0.9]">
-                <span className="block text-foreground/60">MOS</span>
-                <span className="block text-foreground -mt-1">HE</span>
+            <Link to="/" className="block">
+              <span className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground">
+                MOSHE
               </span>
             </Link>
           </div>
 
-          <div className="flex-1" aria-hidden="true" />
+          <div className="h-2 md:h-3" aria-hidden="true" />
 
           {/* Marquee text */}
           <div className="w-full overflow-hidden bg-accent/20 py-1.5 mt-auto">
