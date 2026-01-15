@@ -24,7 +24,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col items-start"
         >
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none -ml-[0.06em] md:-ml-[0.08em] lg:-ml-[0.1em]">
+          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none -ml-[0.02em] md:-ml-[0.03em] lg:-ml-[0.04em] text-white">
             MOSHE
           </h1>
           <p className="text-lg md:text-xl font-light tracking-widest uppercase text-accent animate-pulse-glow mt-2">
