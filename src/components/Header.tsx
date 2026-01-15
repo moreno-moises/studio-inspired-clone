@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import mosheLogo from "@/assets/moshe-logo.jpeg";
+import ksdLogo from "@/assets/ksd-red.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,23 +40,30 @@ const Header = () => {
             </button>
 
             <Link to="/" className="block">
-              <span className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground">
-                MOSHE
-              </span>
+              <div className="flex flex-col items-center">
+                <span className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground">
+                  MOSHE
+                </span>
+                <img 
+                  src={ksdLogo} 
+                  alt="KSD" 
+                  className="h-4 md:h-5 w-auto mt-0.5"
+                />
+              </div>
             </Link>
           </div>
 
           <div className="h-2 md:h-3" aria-hidden="true" />
 
           {/* Marquee text */}
-          <div className="w-full overflow-hidden bg-accent/20 py-1.5 mt-auto">
+          <div className="w-full overflow-hidden py-1.5 mt-auto">
             <div className="marquee">
-              <span className="text-[10px] md:text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4">
+              <span className="text-[10px] md:text-xs font-bold tracking-wider text-foreground whitespace-nowrap px-4">
                 IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦
               </span>
               <span
                 aria-hidden="true"
-                className="text-[10px] md:text-xs font-bold tracking-wider text-accent whitespace-nowrap px-4"
+                className="text-[10px] md:text-xs font-bold tracking-wider text-foreground whitespace-nowrap px-4"
               >
                 IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦ IN MOTION OUT NOW ✦
               </span>
