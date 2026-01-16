@@ -77,7 +77,7 @@ const EventsSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <a
-            href="#"
+            href="/tour"
             className="inline-block px-8 py-4 bg-foreground text-background font-display text-sm tracking-widest uppercase hover:bg-neon-pink hover:text-foreground transition-all duration-300"
           >
             Get Tickets
