@@ -7,6 +7,8 @@ import ksdLogo from "@/assets/ksd-red.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHoveringMoshe, setIsHoveringMoshe] = useState(false);
+  const [isHoveringHamburger, setIsHoveringHamburger] = useState(false);
   const navigate = useNavigate();
 
   const menuItems = [
@@ -28,26 +30,42 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-4 right-4 md:right-8 z-50">
-        <div className="relative flex flex-col rounded-none backdrop-blur-xl bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[130px] md:w-[200px] md:h-[156px]">
+        <div className="relative flex flex-col rounded-none backdrop-blur-md bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[130px] md:w-[200px] md:h-[156px]">
           {/* Top area */}
           <div className="flex items-center justify-between px-4 pt-3">
             <button
               onClick={() => setIsMenuOpen(true)}
+              onMouseEnter={() => setIsHoveringHamburger(true)}
+              onMouseLeave={() => setIsHoveringHamburger(false)}
               className="p-1 hover:opacity-70 transition-opacity"
               aria-label="Open menu"
             >
-              <Menu className="w-6 h-6" strokeWidth={1.5} />
+              <motion.div
+                animate={isHoveringHamburger ? { rotate: 180, scale: 1.1 } : { rotate: 0, scale: 1 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                <Menu className="w-6 h-6" strokeWidth={1.5} />
+              </motion.div>
             </button>
 
-            <Link to="/" className="block">
-              <div className="flex flex-col items-center">
-                <span className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground">
+            <Link 
+              to="/" 
+              className="block"
+              onMouseEnter={() => setIsHoveringMoshe(true)}
+              onMouseLeave={() => setIsHoveringMoshe(false)}
+            >
+              <div className="flex flex-col items-start overflow-hidden">
+                <motion.span 
+                  className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground"
+                  animate={isHoveringMoshe ? { y: [0, 20, -20, 0] } : { y: 0 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
                   MOSHE
-                </span>
+                </motion.span>
                 <img 
                   src={ksdLogo} 
                   alt="KSD" 
-                  className="h-4 md:h-5 w-auto mt-0.5"
+                  className="h-5 md:h-6 w-auto mt-0.5 -ml-[1px]"
                 />
               </div>
             </Link>

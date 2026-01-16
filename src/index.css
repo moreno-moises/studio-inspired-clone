@@ -15,7 +15,7 @@
 @layer base {
   :root {
     --background: 0 0% 0%;
-    --foreground: 30 25% 85%;
+    --foreground: 32 30% 75%;
 
     --card: 0 0% 5%;
     --card-foreground: 0 0% 100%;
@@ -61,7 +61,7 @@
 
   .dark {
     --background: 0 0% 0%;
-    --foreground: 30 25% 85%;
+    --foreground: 32 30% 75%;
     --card: 0 0% 5%;
     --card-foreground: 0 0% 100%;
     --popover: 0 0% 5%;
@@ -195,7 +195,7 @@
     display: flex;
     width: max-content;
     will-change: transform;
-    animation: marquee 10s linear infinite;
+    animation: marquee 18s linear infinite;
   }
 
   .marquee > * {
