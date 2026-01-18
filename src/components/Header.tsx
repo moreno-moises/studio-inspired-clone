@@ -32,7 +32,7 @@ const Header = () => {
       <header className="fixed top-4 right-4 md:right-8 z-50">
         <div className="relative flex flex-col rounded-none backdrop-blur-md bg-foreground/10 border border-foreground/20 overflow-hidden w-[160px] h-[130px] md:w-[200px] md:h-[156px]">
           {/* Top area */}
-          <div className="flex items-center justify-between px-4 pt-3">
+          <div className="flex items-start justify-between px-4 pt-3">
             <button
               onClick={() => setIsMenuOpen(true)}
               onMouseEnter={() => setIsHoveringHamburger(true)}
@@ -51,17 +51,21 @@ const Header = () => {
             <Link 
               to="/" 
               className="block"
-              onMouseEnter={() => setIsHoveringMoshe(true)}
-              onMouseLeave={() => setIsHoveringMoshe(false)}
             >
-              <div className="flex flex-col items-start overflow-hidden">
-                <motion.span 
-                  className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground"
-                  animate={isHoveringMoshe ? { y: [0, 20, -20, 0] } : { y: 0 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
+              <div className="flex flex-col items-start">
+                <div 
+                  className="overflow-hidden h-[22px] md:h-[26px]"
+                  onMouseEnter={() => setIsHoveringMoshe(true)}
+                  onMouseLeave={() => setIsHoveringMoshe(false)}
                 >
-                  MOSHE
-                </motion.span>
+                  <motion.span 
+                    className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground block"
+                    animate={isHoveringMoshe ? { y: -30 } : { y: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                  >
+                    MOSHE
+                  </motion.span>
+                </div>
                 <img 
                   src={ksdLogo} 
                   alt="KSD" 
