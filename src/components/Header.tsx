@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import mosheLogo from "@/assets/moshe-logo.jpeg";
@@ -10,6 +10,18 @@ const Header = () => {
   const [isHoveringMoshe, setIsHoveringMoshe] = useState(false);
   const [isHoveringHamburger, setIsHoveringHamburger] = useState(false);
   const navigate = useNavigate();
+
+  // Lock body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
 
   const menuItems = [
     { label: "Home", href: "/" },
@@ -118,7 +130,7 @@ const Header = () => {
                 </button>
               </div>
 
-              <nav className="flex-1 flex items-center justify-center">
+              <nav className="flex-1 overflow-y-auto py-8">
                 <ul className="space-y-6 text-center">
                   {menuItems.map((item, index) => (
                     <motion.li
