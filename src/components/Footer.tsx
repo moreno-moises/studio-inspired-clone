@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ksdLogo from "@/assets/ksd-red.png";
 
 const socialLinks = [
@@ -23,11 +24,13 @@ const Footer = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-1">
               MOSHE
             </h2>
-            <img 
-              src={ksdLogo} 
-              alt="KSD" 
-              className="h-8 md:h-10 w-auto mb-1"
-            />
+            <Link to="/ksd" className="block group">
+              <img 
+                src={ksdLogo} 
+                alt="KSD" 
+                className="h-8 md:h-10 w-auto mb-1 transition-all duration-300 group-hover:drop-shadow-[0_0_15px_rgba(255,0,0,0.8)] group-hover:brightness-125"
+              />
+            </Link>
             <p className="text-muted-foreground">
               Stay in motion.
             </p>
