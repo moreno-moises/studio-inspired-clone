@@ -62,7 +62,7 @@ const Header = () => {
 
             <Link 
               to="/" 
-              className="block"
+              className="block mt-[2px]"
             >
               <div className="flex flex-col items-start">
                 <div 
@@ -72,8 +72,8 @@ const Header = () => {
                 >
                   <motion.span 
                     className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground block"
-                    animate={isHoveringMoshe ? { y: -30 } : { y: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    animate={isHoveringMoshe ? { y: [0, -30, 30, 0] } : { y: 0 }}
+                    transition={{ duration: 0.5, ease: "easeInOut", times: [0, 0.3, 0.3, 1] }}
                   >
                     MOSHE
                   </motion.span>
