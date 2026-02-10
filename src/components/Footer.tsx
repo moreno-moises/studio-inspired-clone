@@ -24,14 +24,14 @@ const Footer = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-1">
               MOSHE
             </h2>
-            <Link to="/ksd" className="inline-block">
+            <Link to="/ksd" className="inline-block -ml-[2px]">
               <img 
                 src={ksdLogo} 
                 alt="KSD" 
                 className="h-8 md:h-10 w-auto mb-1 transition-all duration-300 hover:drop-shadow-[0_0_15px_rgba(255,0,0,0.8)] hover:brightness-125"
               />
             </Link>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground -ml-[1px]">
               Stay in motion.
             </p>
           </motion.div>
@@ -63,14 +63,6 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Moshe. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">
-              Privacy
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Terms
-            </a>
-          </div>
         </div>
       </div>
     </footer>
