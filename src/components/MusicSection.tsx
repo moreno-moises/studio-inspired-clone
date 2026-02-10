@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ksdGlow from "@/assets/ksd-glow.png";
+import ksdBg from "@/assets/ksd-bg.jpg";
 
 const platforms = [
   { name: "Spotify", url: "https://open.spotify.com/artist/moshe" },
@@ -16,7 +16,7 @@ const MusicSection = () => {
       id="music" 
       className="relative min-h-screen flex items-center justify-center px-6 md:px-12"
       style={{
-        backgroundImage: `url(${ksdGlow})`,
+        backgroundImage: `url(${ksdBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -57,7 +57,7 @@ const MusicSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="group border border-border p-6 md:p-8 hover:border-neon-pink hover:bg-neon-pink/10 transition-all duration-300 bg-background/50 backdrop-blur-sm"
+              className="group border border-border p-6 md:p-8 hover:border-neon-pink hover:bg-neon-pink/10 transition-all duration-300 bg-background/50 backdrop-blur-sm flex items-center justify-center"
             >
               <span className="font-display text-lg md:text-xl font-bold group-hover:text-neon-pink transition-colors">
                 {platform.name}

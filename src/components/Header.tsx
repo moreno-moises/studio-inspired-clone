@@ -73,7 +73,7 @@ const Header = () => {
                   <motion.span 
                     className="text-base md:text-lg font-light tracking-[0.32em] uppercase text-foreground block"
                     animate={isHoveringMoshe ? { y: [0, -30, 30, 0] } : { y: 0 }}
-                    transition={{ duration: 0.5, ease: "easeInOut", times: [0, 0.3, 0.3, 1] }}
+                    transition={{ duration: 0.35, ease: "easeInOut", times: [0, 0.3, 0.3, 1] }}
                   >
                     MOSHE
                   </motion.span>
@@ -81,7 +81,7 @@ const Header = () => {
                 <img 
                   src={ksdLogo} 
                   alt="KSD" 
-                  className="h-5 md:h-6 w-auto mt-0.5 -ml-[1px]"
+                  className="h-5 md:h-6 w-auto mt-0.5"
                 />
               </div>
             </Link>
@@ -112,6 +112,7 @@ const Header = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
             className="fixed inset-0 z-[100] bg-background"
           >
             <div className="flex flex-col h-full">
@@ -119,7 +120,7 @@ const Header = () => {
                 <img 
                   src={mosheLogo} 
                   alt="MOSHE" 
-                  className="h-20 md:h-28 w-auto"
+                  className="h-24 md:h-32 w-auto"
                 />
                 <button
                   onClick={() => setIsMenuOpen(false)}
