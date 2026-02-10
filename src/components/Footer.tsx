@@ -31,7 +31,7 @@ const Footer = () => {
                 className="h-8 md:h-10 w-auto mb-1 transition-all duration-300 hover:drop-shadow-[0_0_15px_rgba(255,0,0,0.8)] hover:brightness-125"
               />
             </Link>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground -ml-[1px]">
               Stay in motion.
             </p>
           </motion.div>
