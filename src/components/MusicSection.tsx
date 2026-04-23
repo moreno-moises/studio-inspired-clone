@@ -4,7 +4,7 @@ import ksdBg from "@/assets/ksd-bg.jpg";
 const platforms = [
   { name: "Spotify", url: "https://open.spotify.com/album/6zndaaWa1Mu2NJ8JN5lBHe?referral=labelaffiliate&utm_source=1011lCmdiLNr&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate" },
   { name: "Apple Music", url: "https://music.apple.com/us/album/in-motion/1892649931" },
-  { name: "YouTube", url: "http://youtube.com/playlist?list=PLWrrGjnossrfF4ZBqowfPkOdEHf03nysR" },
+  { name: "YouTube", url: "https://youtube.com/playlist?list=PLWrrGjnossrfF4ZBqowfPkOdEHf03nysR&si=aV1lhkeQLdEl0w2V" },
   { name: "Amazon Music", url: "https://music.amazon.com/albums/B0GWRYJ1H6?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_cGMbRLBHNy8duPwe5AcenKrD4" },
   { name: "Tidal", url: "https://tidal.com/album/514879840/u" },
 ];
