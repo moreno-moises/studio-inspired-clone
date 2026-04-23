@@ -28,7 +28,7 @@ const VSTSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
         >
-          Get the exact sounds from "In Motion" with my custom-built VST plugin. Designed for producers to stay in motion.
+          Get the exact sounds from "In Motion" with my custom-built VST plugin. Stay in motion.
         </motion.p>
 
         <motion.div
@@ -70,15 +70,6 @@ const VSTSection = () => {
           </Link>
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-sm text-muted-foreground mt-8"
-        >
-          Releasing with the EP • Be the first to know
-        </motion.p>
       </div>
     </section>
   );

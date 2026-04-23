@@ -45,10 +45,6 @@ const FeaturedAlbumSection = () => {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </div>
-            {/* Neon glow effect on hover */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-              <div className="absolute inset-0 shadow-[0_0_60px_10px_hsl(var(--neon-pink)/0.3)]" />
-            </div>
           </motion.div>
 
           {/* Album Info */}

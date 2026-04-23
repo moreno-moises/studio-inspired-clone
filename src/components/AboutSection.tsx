@@ -8,6 +8,9 @@ const songs = [
   "City Light Night (2AM)",
   "See My Face",
   "BLEED ON",
+  "For What Has Come To Be",
+  "Until I D.I.E.",
+  "at the hour of my death call me",
 ];
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
@@ -75,7 +78,7 @@ const AboutSection = () => {
               <span className="font-glassure text-neon-pink">In Motion EP</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
-              "In Motion" is a journey through sound and emotions. An EP that captures the essence of movement, growth, and spiritual transformation.
+              "In Motion" is a journey through sound and emotion. An EP that captures the essence of movement, growth, and spiritual transformation.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Each track tells a story, weaving together moments of introspection and religious experiences into a cohesive sound.

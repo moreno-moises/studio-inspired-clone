@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import mosheLogo from "@/assets/moshe-logo.jpeg";
+import mosheLogo from "@/assets/red-moshe-logo.png";
 import ksdLogo from "@/assets/ksd-red.png";
 
 const Header = () => {
