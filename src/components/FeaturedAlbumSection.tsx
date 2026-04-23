@@ -38,7 +38,7 @@ const FeaturedAlbumSection = () => {
             transition={{ duration: 0.6 }}
             className="relative group"
           >
-            <div className="aspect-square">
+            <div className="aspect-square transition-shadow duration-500 group-hover:shadow-[0_0_80px_15px_hsl(var(--neon-pink)/0.55)]">
               <img
                 src={inmotionCover}
                 alt="In Motion EP Cover"
