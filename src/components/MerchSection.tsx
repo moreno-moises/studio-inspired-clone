@@ -15,7 +15,7 @@ const MerchSection = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/70" />
+      <div className="absolute inset-0 bg-background/40" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <motion.div

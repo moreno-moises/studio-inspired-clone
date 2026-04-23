@@ -22,7 +22,7 @@ const ContactSection = () => {
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`
     );
     
-    window.location.href = `mailto:contact@moshe.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+    window.location.href = `mailto:ticketburner100@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
     
     setTimeout(() => {
       setIsSubmitting(false);
