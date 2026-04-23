@@ -38,11 +38,11 @@ const FeaturedAlbumSection = () => {
             transition={{ duration: 0.6 }}
             className="relative group"
           >
-            <div className="aspect-square overflow-hidden">
+            <div className="aspect-square">
               <img
                 src={inmotionCover}
                 alt="In Motion EP Cover"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </div>
             {/* Neon glow effect on hover */}

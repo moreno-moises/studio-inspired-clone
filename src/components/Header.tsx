@@ -27,7 +27,6 @@ const Header = () => {
     { label: "Home", href: "/" },
     { label: "In Motion", href: "/in-motion" },
     { label: "Music", href: "/music" },
-    { label: "Tour", href: "/tour" },
     { label: "Merch", href: "/merch" },
     { label: "In Motion VST", href: "/vst" },
     { label: "About", href: "/about" },

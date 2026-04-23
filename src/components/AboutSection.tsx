@@ -78,12 +78,10 @@ const AboutSection = () => {
               <span className="font-glassure text-neon-pink">In Motion EP</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
-              "In Motion" is a journey through sound and emotion—an EP that captures 
-              the essence of movement, growth, and transformation.
+              "In Motion" is a journey through sound and emotions. An EP that captures the essence of movement, growth, and spiritual transformation.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Each track tells a story, weaving together moments of introspection 
-              and energy into a cohesive sonic experience.
+              Each track tells a story, weaving together moments of introspection and religious experiences into a cohesive sound.
             </p>
           </motion.div>
 
