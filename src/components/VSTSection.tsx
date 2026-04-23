@@ -28,8 +28,7 @@ const VSTSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
         >
-          Get the exact sounds from "In Motion" with my custom-built VST plugin. 
-          Designed for producers who want to create that signature sound.
+          Get the exact sounds from "In Motion" with my custom-built VST plugin. Designed for producers to stay in motion.
         </motion.p>
 
         <motion.div
