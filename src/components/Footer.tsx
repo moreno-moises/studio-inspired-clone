@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import ksdLogo from "@/assets/ksd-red.png";
 
 const socialLinks = [
-  { name: "Instagram", url: "https://instagram.com/hasanraheem" },
-  { name: "Twitter", url: "https://twitter.com/hasanraheem" },
-  { name: "Spotify", url: "https://open.spotify.com/artist/5krkohEVJweRjKeAXGw6zt" },
-  { name: "YouTube", url: "https://www.youtube.com/@HasanRaheemOfficial" },
+  { name: "Instagram", url: "https://www.instagram.com/moshe.wav/" },
+  { name: "Spotify", url: "https://open.spotify.com/album/6zndaaWa1Mu2NJ8JN5lBHe?referral=labelaffiliate&utm_source=1011lCmdiLNr&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate" },
+  { name: "YouTube", url: "http://youtube.com/playlist?list=PLWrrGjnossrfF4ZBqowfPkOdEHf03nysR" },
 ];
 
 const Footer = () => {
