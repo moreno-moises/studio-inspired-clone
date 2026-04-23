@@ -44,7 +44,7 @@ const MusicSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-3 gap-6"
+          className="flex flex-wrap justify-center gap-6"
         >
           {platforms.map((platform, index) => (
             <motion.a
@@ -56,7 +56,7 @@ const MusicSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="group border border-border p-6 md:p-8 hover:border-neon-pink hover:bg-neon-pink/10 transition-all duration-300 bg-background/50 backdrop-blur-sm flex items-center justify-center"
+              className="group border border-border p-6 md:p-8 hover:border-neon-pink hover:bg-neon-pink/10 transition-all duration-300 bg-background/50 backdrop-blur-sm flex items-center justify-center w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)]"
             >
               <span className="font-display text-lg md:text-xl font-bold group-hover:text-neon-pink transition-colors">
                 {platform.name}
