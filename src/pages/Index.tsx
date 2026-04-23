@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import EventsSection from "@/components/EventsSection";
+
 import MerchSection from "@/components/MerchSection";
 import FeaturedAlbumSection from "@/components/FeaturedAlbumSection";
 import VSTSection from "@/components/VSTSection";
@@ -19,7 +19,7 @@ const Index = () => {
         <HeroSection />
         <FeaturedAlbumSection />
         <MusicSection />
-        <EventsSection />
+        
         <MerchSection />
         <VSTSection />
         <AboutSection />

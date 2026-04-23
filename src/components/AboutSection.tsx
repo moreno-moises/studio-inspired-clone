@@ -5,12 +5,9 @@ const songs = [
   "Far Away",
   "Afterglow",
   "Somewhere Higher",
-  "2AM",
-  "(empty space)",
+  "City Light Night (2AM)",
+  "See My Face",
   "BLEED ON",
-  "for what has come to be",
-  "at the hour of my death call me",
-  "UNTIL I DIE",
 ];
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
