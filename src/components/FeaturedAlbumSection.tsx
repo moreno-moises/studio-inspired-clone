@@ -4,9 +4,9 @@ import inmotionCover from "@/assets/inmotion-cover.jpg";
 const streamingPlatforms = [
   { name: "Spotify", url: "https://open.spotify.com/album/6zndaaWa1Mu2NJ8JN5lBHe?referral=labelaffiliate&utm_source=1011lCmdiLNr&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate" },
   { name: "Apple Music", url: "https://music.apple.com/us/album/in-motion/1892649931" },
-  { name: "YouTube", url: "https://youtube.com/playlist?list=PLWrrGjnossrfF4ZBqowfPkOdEHf03nysR&si=aV1lhkeQLdEl0w2V" },
+  { name: "YouTube", url: "https://www.youtube.com/playlist?list=PLWrrGjnossrfF4ZBqowfPkOdEHf03nysR" },
   { name: "Amazon Music", url: "https://music.amazon.com/albums/B0GWRYJ1H6?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_cGMbRLBHNy8duPwe5AcenKrD4" },
-  { name: "Tidal", url: "https://tidal.com/album/514879840/u" },
+  { name: "Tidal", url: "https://tidal.com/browse/album/514879840" },
   { name: "Deezer", url: "https://link.deezer.com/s/334nfRqE7YF0c0rAJ2llY" },
 ];
 
@@ -38,7 +38,7 @@ const FeaturedAlbumSection = () => {
             transition={{ duration: 0.6 }}
             className="relative group"
           >
-            <div className="aspect-square">
+            <div className="aspect-square transition-shadow duration-500 group-hover:shadow-[0_0_80px_15px_hsl(var(--neon-pink)/0.55)]">
               <img
                 src={inmotionCover}
                 alt="In Motion EP Cover"
