@@ -7,7 +7,7 @@ const platforms = [
   { name: "YouTube", url: "https://youtube.com/playlist?list=PLWrrGjnossrfF4ZBqowfPkOdEHf03nysR&si=aV1lhkeQLdEl0w2V" },
   { name: "Amazon Music", url: "https://music.amazon.com/albums/B0GWRYJ1H6?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_cGMbRLBHNy8duPwe5AcenKrD4" },
   { name: "Tidal", url: "https://tidal.com/album/514879840/u" },
-];
+  { name: "Deezer", url: "https://link.deezer.com/s/334nfRqE7YF0c0rAJ2llY" },
 
 const MusicSection = () => {
   return (
