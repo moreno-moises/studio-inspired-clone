@@ -11,6 +11,12 @@ const Header = () => {
   const [isHoveringHamburger, setIsHoveringHamburger] = useState(false);
   const navigate = useNavigate();
 
+  // Preload moshe logo so it appears instantly when menu opens
+  useEffect(() => {
+    const img = new Image();
+    img.src = mosheLogo;
+  }, []);
+
   // Lock body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
@@ -119,7 +125,7 @@ const Header = () => {
                 <img 
                   src={mosheLogo} 
                   alt="MOSHE" 
-                  className="h-24 md:h-32 w-auto"
+                  className="h-36 md:h-48 w-auto"
                 />
                 <button
                   onClick={() => setIsMenuOpen(false)}
