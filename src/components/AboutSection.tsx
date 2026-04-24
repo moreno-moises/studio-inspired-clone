@@ -72,6 +72,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6 }}
+            className="text-center lg:text-left"
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
               About <br />
