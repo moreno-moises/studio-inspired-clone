@@ -72,6 +72,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6 }}
+            className="text-center lg:text-left"
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
               About <br />
@@ -91,7 +92,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative pl-0 md:pl-0 lg:pl-0"
+            className="relative text-center lg:text-left"
           >
             <div className="grid grid-cols-1 gap-3">
               {songs.map((song, index) => (

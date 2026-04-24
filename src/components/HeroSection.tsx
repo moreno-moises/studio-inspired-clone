@@ -9,7 +9,7 @@ const HeroSection = () => {
         <img
           src={mosheBg}
           alt="Moshe"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-[center_20%] md:object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         <div className="absolute inset-0 bg-background/30" />
