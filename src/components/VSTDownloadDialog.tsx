@@ -36,13 +36,12 @@ const VSTDownloadDialog = ({ trigger }: VSTDownloadDialogProps) => {
     }
     setError(null);
 
-    try {
-      const existing = JSON.parse(localStorage.getItem("vst_signups") || "[]");
-      existing.push({ ...parsed.data, at: new Date().toISOString() });
-      localStorage.setItem("vst_signups", JSON.stringify(existing));
-    } catch {
-      // ignore storage errors
-    }
+    // Fire-and-forget backend notification (silent to the user)
+    supabase.functions
+      .invoke("notify-vst-signup", { body: parsed.data })
+      .catch(() => {
+        // intentionally silent
+      });
 
     // Trigger download
     const a = document.createElement("a");
