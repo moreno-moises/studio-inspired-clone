@@ -28,7 +28,7 @@ const MerchSection = () => {
             Merch
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            In Motion isn't just music. It's wearable now.
+            In Motion is wearable now.
           </p>
           <Link
             to="/merch"
