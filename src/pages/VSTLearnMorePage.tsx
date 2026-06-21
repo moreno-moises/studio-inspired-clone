@@ -58,7 +58,7 @@ const VSTLearnMorePage = () => {
               <img
                 src={vstImage}
                 alt="In Motion VST Plugin"
-                className="w-full max-w-md mx-auto"
+                className="w-full max-w-lg mx-auto"
               />
             </motion.div>
 
