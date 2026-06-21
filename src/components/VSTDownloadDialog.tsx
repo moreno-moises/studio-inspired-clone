@@ -2,6 +2,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { Download } from "lucide-react";
 import installerAsset from "@/assets/in-motion-vst-installer.asset.json";
+import { supabase } from "@/integrations/supabase/client";
 import {
   Dialog,
   DialogContent,
