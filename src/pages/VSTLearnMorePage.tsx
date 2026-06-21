@@ -3,6 +3,7 @@ import { Download, ArrowLeft, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import VSTDownloadDialog from "@/components/VSTDownloadDialog";
 import vstImage from "@/assets/in-motion-vst.png";
 
 const features = [
@@ -57,7 +58,7 @@ const VSTLearnMorePage = () => {
               <img
                 src={vstImage}
                 alt="In Motion VST Plugin"
-                className="w-full max-w-2xl mx-auto"
+                className="w-full max-w-md mx-auto"
               />
             </motion.div>
 
