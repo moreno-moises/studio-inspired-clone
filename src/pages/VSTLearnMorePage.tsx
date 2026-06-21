@@ -3,6 +3,7 @@ import { Download, ArrowLeft, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import VSTDownloadDialog from "@/components/VSTDownloadDialog";
 import vstImage from "@/assets/in-motion-vst.png";
 
 const features = [
@@ -57,7 +58,7 @@ const VSTLearnMorePage = () => {
               <img
                 src={vstImage}
                 alt="In Motion VST Plugin"
-                className="w-full max-w-2xl mx-auto"
+                className="w-full max-w-md mx-auto"
               />
             </motion.div>
 
@@ -97,13 +98,17 @@ const VSTLearnMorePage = () => {
               <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
                 Ready to create?
               </h2>
-              <a
-                href="#"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-foreground text-background font-display text-sm tracking-widest uppercase hover:bg-neon-pink hover:text-foreground transition-all duration-300"
-              >
-                <Download className="w-5 h-5" />
-                Stay In Motion
-              </a>
+              <VSTDownloadDialog
+                trigger={
+                  <button
+                    type="button"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-foreground text-background font-display text-sm tracking-widest uppercase hover:bg-neon-pink hover:text-foreground transition-all duration-300"
+                  >
+                    <Download className="w-5 h-5" />
+                    Stay In Motion
+                  </button>
+                }
+              />
             </motion.div>
           </div>
         </section>
