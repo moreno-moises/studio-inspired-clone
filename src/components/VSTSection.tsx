@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import vstImage from "@/assets/in-motion-vst.png";
+import VSTDownloadDialog from "@/components/VSTDownloadDialog";
 
 const VSTSection = () => {
   return (
@@ -55,13 +56,17 @@ const VSTSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a
-            href="#"
-            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-foreground text-background font-display text-sm tracking-widest uppercase hover:bg-neon-pink hover:text-foreground transition-all duration-300"
-          >
-            <Download className="w-5 h-5" />
-            Download Free
-          </a>
+          <VSTDownloadDialog
+            trigger={
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-foreground text-background font-display text-sm tracking-widest uppercase hover:bg-neon-pink hover:text-foreground transition-all duration-300"
+              >
+                <Download className="w-5 h-5" />
+                Download Free
+              </button>
+            }
+          />
           <Link
             to="/vst-learn-more"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-foreground font-display text-sm tracking-widest uppercase hover:bg-foreground hover:text-background transition-all duration-300"
