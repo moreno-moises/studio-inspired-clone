@@ -82,7 +82,7 @@ const AboutSection = () => {
               In Motion encapsulates some of the first steps of my journey towards a relationship with God. All of my experiences with desolation, doubt, skepticism, desperation, hope, and clarity are at full display here. My goal for this EP is to inspire a much needed, more creative approach to Christian music. Please know that for each and everyone of you, God has a plan and that plan is always in motion.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
-              This is me. This is everything. All that you see. The dream. KSD.{"\n"}Stay in motion.
+              Stay in motion.
             </p>
           </motion.div>
 
