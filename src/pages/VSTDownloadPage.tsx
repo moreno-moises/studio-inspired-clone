@@ -43,13 +43,19 @@ const VSTDownloadPage = () => {
   }, [token]);
 
   const handleDownload = () => {
+    // Asset is served from Lovable CDN. On custom domains (e.g. Netlify),
+    // the relative /__l5e/ path doesn't exist, so use the absolute Lovable host.
+    const assetUrl = installerAsset.url.startsWith("http")
+      ? installerAsset.url
+      : `https://moshemusic.lovable.app${installerAsset.url}`;
     const a = document.createElement("a");
-    a.href = installerAsset.url;
+    a.href = assetUrl;
     a.download = installerAsset.original_filename;
     document.body.appendChild(a);
     a.click();
     a.remove();
   };
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
