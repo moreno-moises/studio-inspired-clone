@@ -5,8 +5,10 @@ import { z } from 'npm:zod@3.23.8';
 const schema = z.object({
   name: z.string().trim().min(1).max(200),
   email: z.string().trim().email().max(255),
-  origin: z.string().url().max(255),
+  origin: z.string().url().max(255).optional(),
 });
+
+const SITE_URL = 'https://moshewav.com';
 
 const escape = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
