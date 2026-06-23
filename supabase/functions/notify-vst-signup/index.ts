@@ -52,7 +52,7 @@ Deno.serve(async (req) => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: 'In Motion <onboarding@resend.dev>',
+        from: 'Moshe <noreply@moshewav.com>',
         to: ['moshe.sounds@gmail.com'],
         reply_to: email,
         subject: `New VST signup: ${name}`,
