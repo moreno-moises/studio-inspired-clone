@@ -46,7 +46,7 @@ Deno.serve(async (req) => {
       });
     }
 
-    const confirmUrl = `${origin.replace(/\/$/, '')}/vst-download?token=${data.id}`;
+    const confirmUrl = `${SITE_URL}/vst-download?token=${data.id}`;
 
     const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY');
     if (!RESEND_API_KEY) {
