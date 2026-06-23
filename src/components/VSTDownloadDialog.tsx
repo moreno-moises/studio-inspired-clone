@@ -120,7 +120,7 @@ const VSTDownloadDialog = ({ trigger }: VSTDownloadDialogProps) => {
             </div>
             {error && <p className="text-sm text-neon-pink">{error}</p>}
             <p className="text-xs text-muted-foreground leading-relaxed">
-              By confirming, you'll receive an email whenever a new Moshe song is released. You can unsubscribe at any time.
+              By downloading, you'll receive your download link and occasional emails about new music, plugins, and updates from Moshe. You can unsubscribe at any time.
             </p>
             <button
               type="submit"
