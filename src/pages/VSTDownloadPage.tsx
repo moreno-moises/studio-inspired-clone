@@ -6,10 +6,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { supabase } from "@/integrations/supabase/client";
 import installerAsset from "@/assets/in-motion-vst-installer.asset.json";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 type Status = "loading" | "ok" | "error";
 
 const VSTDownloadPage = () => {
+  usePageTitle("VST Download");
   const [params] = useSearchParams();
   const token = params.get("token");
   const [status, setStatus] = useState<Status>("loading");

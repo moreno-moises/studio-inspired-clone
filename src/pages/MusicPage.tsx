@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
 import MusicSection from "@/components/MusicSection";
 import Footer from "@/components/Footer";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const MusicPage = () => {
+  usePageTitle("Music");
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />

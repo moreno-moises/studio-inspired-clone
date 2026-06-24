@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const AboutPage = () => {
+  usePageTitle("About");
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
