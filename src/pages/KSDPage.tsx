@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const KSDPage = () => {
+  usePageTitle("KSD");
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <Header />

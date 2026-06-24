@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import VSTDownloadDialog from "@/components/VSTDownloadDialog";
 import vstImage from "@/assets/in-motion-vst.png";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const features = [
   "Custom multi-tap reverse delay with tempo-synced motion",
@@ -17,6 +18,7 @@ const features = [
 ];
 
 const VSTLearnMorePage = () => {
+  usePageTitle("In Motion VST");
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
