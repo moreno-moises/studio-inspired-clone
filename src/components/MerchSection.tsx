@@ -6,12 +6,9 @@ const MerchSection = () => {
   return (
     <section 
       id="merch" 
-      className="relative min-h-screen flex items-center justify-center px-6 md:px-12"
+      className="relative min-h-screen flex items-center justify-center px-6 md:px-12 bg-center bg-cover md:bg-fixed"
       style={{
         backgroundImage: `url(${merchImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
       }}
     >
       {/* Overlay */}
